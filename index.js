@@ -10,7 +10,7 @@ const getInfos = async () =>{
     const response = await fetch('https://api.github.com/users/inhaprogaminha')
     const data = await response.json()
     titulo.innerHTML = data.name
-    reposPerfil.innerHTML = data.public_reposimagemPerfil.setAttribute('src',data.avatar_url)
+    reposPerfil.setAttribute('src',data.avatar_url)
     bioPerfil.document = data.bio
     segPerfil.innerHTML= `seguidores ${data.followers} e seguindo ${data.following} perfil`
     locPerfil.innerHTML = data.location    
