@@ -14,5 +14,6 @@ const getInfos = async () =>{
     bioPerfil.document = data.bio
     segPerfil.innerHTML= `seguidores ${data.followers} e seguindo ${data.following} perfil`
     locPerfil.innerHTML = data.location    
+    reposPerfil.innerHTML = data.public_repos
 } 
 getInfos()
